@@ -1,27 +1,36 @@
-# operasi Logika
-# or and xor not
-
 x = True
 z = not x
-print("nilai dari z =", z)
+print(f"not {x} = {z}\n")
 
-print("********** and ***********")
-x = True
-y = True
-z = x and y
-print(x, 'and', y, '=', z)
+# AND
+print("----- AND -----")
+x = True; y = True
+print(f"{x} and {y} = {x and y}")
+x = True; y = False
+print(f"{x} and {y} = {x and y}")
+x = False; y = True
+print(f"{x} and {y} = {x and y}")
+x = False; y = False
+print(f"{x} and {y} = {x and y}\n")
 
-x = True
-y = False
-z = x and y
-print(x, 'and', y, '=', z)
+# OR
+print("----- OR -----")
+x = True; y = True
+print(f"{x} or {y} = {x or y}")
+x = True; y = False
+print(f"{x} or {y} = {x or y}")
+x = False; y = True
+print(f"{x} or {y} = {x or y}")
+x = False; y = False
+print(f"{x} or {y} = {x or y}\n")
 
-x = False
-y = True
-z = x and y
-print(x, 'and', y, '=', z)
-
-x = False
-y = False
-z = x and y
-print(x, 'and',y,'=',z)
+# XOR (Exclusive OR) menggunakan operator !=
+print("----- XOR -----")
+x = True; y = True
+print(f"{x} xor {y} = {x != y}")
+x = True; y = False
+print(f"{x} xor {y} = {x != y}")
+x = False; y = True
+print(f"{x} xor {y} = {x != y}")
+x = False; y = False
+print(f"{x} xor {y} = {x != y}")
